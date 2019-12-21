@@ -1,0 +1,15 @@
+x,k=map(int,input().split())
+s=str(x)
+c=0
+flag=1
+i=0
+n=""
+while(c!=k):
+    if(s[i]!="9"):
+        n+="9"
+        c+=1
+    else:
+        n+=s[i]
+    i+=1
+n+=s[i:]
+print(n)
